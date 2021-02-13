@@ -130,7 +130,6 @@ a {text-decoration: none;color: #00fc70;padding: 0.3rem 1.5rem;}
     text-align: justify;
     height: auto;
     font-size: 1.7rem;
-    font-weight: 500;
 }
 
 .comments > h2 {  color: rgb(22, 207, 121);}
@@ -191,23 +190,6 @@ a {text-decoration: none;color: #00fc70;padding: 0.3rem 1.5rem;}
     align-items: center;
 }
 
-/* .arrows {
-    display: flex;
-    width: 90vw;
-    font-size: 4rem;
-    justify-content: space-between;
-} */
-
-/* .left,
-.right { padding: 0.1rem 0.5rem  0.1rem 0.5rem;}
-.left:hover,
-.right:hover {
-    cursor: pointer;
-    transition: background-color 1s;
-    background-color: black;
-    border-radius: 10%;
-} */
-
 
 .skill {
     display: flex;
@@ -256,7 +238,7 @@ a {text-decoration: none;color: #00fc70;padding: 0.3rem 1.5rem;}
 
 
 .box > .lan > p{font-size: 1.7rem; color: rgb(31, 192, 111);font-weight: 700;padding: 1rem;}
-.code_sites > p{text-align: justify;padding: 2rem;font-weight: 500;font-size: 1.7rem;}
+.code_sites > p{text-align: justify;padding: 2rem;font-size: 1.7rem;}
 .code_sites > p > b {color: greenyellow;}
 .coding_profiles {display: flex;justify-content: center;align-items: center;}
 .coding_profiles > a{padding: 50px;border: 2px solid gray;margin: 1rem;font-size: 2rem;}
