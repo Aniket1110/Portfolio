@@ -1,0 +1,371 @@
+
+/* main css */
+
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing: border-box;
+    font-family: system-ui;
+    color: white;
+    vertical-align: middle;
+    text-shadow: 5px 5px 5px rgb(3, 10, 10);
+}
+
+
+.navbar {
+
+    display: flex;
+    font-weight: bold;
+    justify-content: space-between;
+    height: 5rem;
+    background-color: rgb(0, 0, 95);
+    transition: background-color 2s;
+    align-items: center;
+    position:fixed;
+    left: 0px;
+    top:0px;
+    z-index: 1000;
+    right: 0px;     
+}
+
+
+.sidebar {
+    position: fixed;
+    height: 100%;
+    width: 15rem;
+    text-align: center;
+    flex-direction: column;
+    justify-content: space-around;
+    line-height: 15vh;
+    z-index: 1000;
+    background-color:  rgb(4, 4, 73);
+    display: none;
+}
+
+#side_icon {
+margin-left: 3rem;
+cursor: pointer;
+display: none;
+font-size: 2.5rem;
+}
+
+
+.sidebar > .cross {
+    font-size: 5rem;
+    cursor: pointer;
+    width: 30%;
+    margin: 0px auto;
+    color: rgb(6, 235, 120);
+}
+
+.sidebar > div > a {font-size: 1.5rem;}
+.sidebar > div > a:hover,
+.options > span >a:hover { 
+
+    background-color: rgb(58, 108, 202);
+    box-shadow: 2px 2px 2px rgb(14, 13, 13);
+}
+.name {margin-right: 3rem;font-size: 1.5rem;}
+.options > span >a{ cursor:pointer;font-size: 1.4rem;}
+a {text-decoration: none;color: #00fc70;padding: 0.3rem 1.5rem;}
+
+
+.background {
+    background-image: url("img2.jpg");
+    animation-name: background_animation;
+    animation-duration: 4s;
+    background-position: center;
+    background-size: cover;
+    height:auto;
+    position: fixed;
+    left: 0px;
+    right: 0px;
+    top:0px;
+    bottom: 0px;
+    z-index: -1;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    filter: blur(10px);
+}
+
+ .heading {
+    text-align: center;
+    font-size: 3rem;
+    margin-top: 8rem;
+    padding: 1rem 0px ;
+}
+
+
+.home,
+.about,
+.education,
+.skills,
+.contacts,
+.footer
+{
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+}
+
+.home {height: 100vh;}
+
+.about > .intro1 {
+    display: flex;
+    justify-content: space-around;
+    color: rgb(26, 126, 92);
+    height: auto;
+    width: auto;
+    padding: 2rem;
+}
+
+.comments {
+    padding: 2rem;
+    width: 100%;
+    text-align: justify;
+    height: auto;
+    font-size: 1.7rem;
+    font-weight: 500;
+}
+
+.comments > h2 {  color: rgb(22, 207, 121);}
+
+.intro1 > .image {
+    height: 20rem;
+    width: 30rem;
+    background-image: url("aniket_balcony.jpg");
+    background-size: cover;
+    margin: 2rem;
+    box-shadow: 20px 20px 0px  rgb(23, 24, 23);
+    border: 11px solid rgb(3, 155, 84);
+}
+
+
+.home > p {
+    font-size: 2.5rem;
+    padding: 1rem;
+    text-align: center;
+    animation-name: aniket;
+    animation-duration: 2s;
+}
+
+/* animation */
+
+@keyframes aniket {from {font-size: 1rem;}to {font-size: 2.5rem;}}
+
+.home > img {
+    height: 15rem;
+    width: 15rem;
+    border: 2px solid rgb(149, 178, 192);
+    border-radius: 50%;
+}
+
+#skill_set {
+
+    font-weight: bold;
+    color: rgb(54, 212, 107);
+    font-size: 2rem;
+    text-shadow: 5px 5px 5px rgb(3, 10, 10);
+    padding: 1rem;
+
+}
+
+.edu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+}
+
+.edu > #content {
+
+    margin: auto;
+    color:rgb(4, 245, 97);
+    font-size: 2.5rem;
+    display: none;
+    align-items: center;
+}
+
+/* .arrows {
+    display: flex;
+    width: 90vw;
+    font-size: 4rem;
+    justify-content: space-between;
+} */
+
+/* .left,
+.right { padding: 0.1rem 0.5rem  0.1rem 0.5rem;}
+.left:hover,
+.right:hover {
+    cursor: pointer;
+    transition: background-color 1s;
+    background-color: black;
+    border-radius: 10%;
+} */
+
+
+.skill {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.box {
+    height: 25rem;
+    text-align: center;
+    border: 2px solid gray;
+    width: 40rem;
+    color: green;
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+    box-shadow: 10px 10px 8px gray;
+    animation-name: box_ani;
+    animation-duration: 3s;
+}
+
+@keyframes ani {
+    from {opacity: 0.3;}
+    to {opacity: 1;}
+}
+
+.box > .laptop1,
+.box > .laptop2
+ {
+    height: 100%;
+    width: 70%;
+    background-position: center;
+    background-size: cover;
+}
+.box > .laptop1 {background-image: url("laptop1.jpg");}
+.box > .laptop2 {background-image: url("laptop2.jpg");}
+
+.skill > .ttl {
+    font-size: 2.5rem;
+    color: rgb(24, 202, 172);
+    font-weight: 800;
+    text-align: center;
+    padding: 2rem;
+}
+
+
+.box > .lan > p{font-size: 1.7rem; color: rgb(31, 192, 111);font-weight: 700;padding: 1rem;}
+.code_sites > p{text-align: justify;padding: 2rem;font-weight: 500;font-size: 1.7rem;}
+.code_sites > p > b {color: greenyellow;}
+.coding_profiles {display: flex;justify-content: center;align-items: center;}
+.coding_profiles > a{padding: 50px;border: 2px solid gray;margin: 1rem;font-size: 2rem;}
+.coding_profiles > a:hover {background-color: rgb(58, 108, 202);}
+.contact__ > a > i {padding: 2rem;}
+
+.footer,
+.footer > p
+ {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10vh;
+    width: 100%;
+    margin-top: 1rem;
+    background-color: white;
+    color: rgb(16, 46, 148);
+    font-weight: 700;
+    text-shadow: 0px 0px 0px;
+}
+
+
+@keyframes  background_animation {  from {opacity: 0.8;}  to{opacity: 1;}}
+
+
+/* Responsive web design using media queries */
+
+ @media only screen and (max-width : 1242px) {
+
+    .intro1 {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    #side_icon {
+        display: flex;
+        padding: 2px;
+        margin-bottom: 1px solid black;
+        cursor: pointer;
+    }
+    .options {
+        display: none;
+    }
+    .home > p {
+        font-size: 2rem;
+    }
+
+    @keyframes aniket {
+        from {font-size: 1rem;}
+        to {font-size: 2rem;}
+    }
+    .skills > .skill > box {
+        height: 70%;
+        width: 70%;
+    }
+
+    .coding_profiles > a {
+        padding: 20px;
+    }
+    .contact__ > a > i {
+        padding: 1rem;
+    }
+
+}
+
+
+@media only screen and (max-width :700px) {
+    html {
+        font-size: 60%;
+    }
+} 
+
+ @media only screen and (max-width :535px) {
+     
+    .coding_profiles > a {
+        padding: 10px;
+        font-size: 1.7rem;
+    }
+    .edu >#content {
+        font-size: 2rem;
+    }
+}
+
+@media only screen and (max-width: 425px) {
+    .coding_profiles {
+        flex-direction: column;
+    }
+    .coding_profiles > a{
+        padding: 2rem;
+    }
+    .box {
+        width: 30rem;
+    }
+
+    html {
+        font-size: 55%;
+    }
+
+}
+
+@media only screen and (max-width: 830px) { .coding_profiles > a {font-size: 1.5rem;}}
+
+@media only screen and (max-width:335px) {
+    .edu >#content {
+        font-size: 1.5rem;
+    }
+    .contact__ > a > i {
+       padding: 0.6rem;
+    }
+}
+
+
