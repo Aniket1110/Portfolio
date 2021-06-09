@@ -19,14 +19,14 @@ $(document).ready(function () {
 
   //skill sets
 
-    let count = -1;
-    arr = ["Competitive Programmer", "Web Developer", "IIESTIAN"];
+    let __count = 0;
+    arr1 = ["Competitive Programmer", "Web Developer","Flutter Developer","IIESTIAN"];
     setInterval(function () {
       $("#skill_set").fadeOut(1000, function () {
-        $(this).text(arr[(count+1) % arr.length]).fadeIn(1000);
-        count=(count+1) % arr.length;
+        $(this).text(arr1[__count %  arr1.length]).fadeIn(1000);
+        __count++;
       });
-    }, 1000);
+    }, 2500);
 
 
     //scooling

@@ -8,7 +8,7 @@
     font-family: system-ui;
     color: white;
     vertical-align: middle;
-    text-shadow: 5px 5px 5px rgb(3, 10, 10);
+    text-shadow: 5px 5px 5px rgb(3, 10, 10);    
 }
 
 
@@ -18,7 +18,7 @@
     font-weight: bold;
     justify-content: space-between;
     height: 5rem;
-    background-color: rgb(0, 0, 95);
+    background-color: grey;
     transition: background-color 2s;
     align-items: center;
     position:fixed;
@@ -30,6 +30,7 @@
 
 
 .sidebar {
+
     position: fixed;
     height: 100%;
     width: 15rem;
@@ -38,40 +39,47 @@
     justify-content: space-around;
     line-height: 15vh;
     z-index: 1000;
-    background-color:  rgb(4, 4, 73);
+    background-color: grey; 
     display: none;
+
 }
 
 #side_icon {
+
 margin-left: 3rem;
 cursor: pointer;
 display: none;
 font-size: 2.5rem;
+
 }
 
 
 .sidebar > .cross {
+
     font-size: 5rem;
     cursor: pointer;
     width: 30%;
     margin: 0px auto;
     color: rgb(6, 235, 120);
+
 }
 
 .sidebar > div > a {font-size: 1.5rem;}
 .sidebar > div > a:hover,
 .options > span >a:hover { 
 
-    background-color: rgb(58, 108, 202);
-    box-shadow: 2px 2px 2px rgb(14, 13, 13);
+    background-color: rgb(24, 202, 172);
+    border-radius: 20px;
+
 }
+
 .name {margin-right: 3rem;font-size: 1.5rem;}
 .options > span >a{ cursor:pointer;font-size: 1.4rem;}
-a {text-decoration: none;color: #00fc70;padding: 0.3rem 1.5rem;}
+a {text-decoration: none;color:white;padding: 0.3rem 1.5rem;}
 
 
 .background {
-    background-image: url("img2.jpg");
+ 
     animation-name: background_animation;
     animation-duration: 4s;
     background-position: center;
@@ -88,14 +96,17 @@ a {text-decoration: none;color: #00fc70;padding: 0.3rem 1.5rem;}
     color: white;
     justify-content: center;
     align-items: center;
-    filter: blur(10px);
+    background-color: black;
+
 }
 
  .heading {
+
     text-align: center;
     font-size: 3rem;
     margin-top: 8rem;
     padding: 1rem 0px ;
+
 }
 
 
@@ -111,46 +122,57 @@ a {text-decoration: none;color: #00fc70;padding: 0.3rem 1.5rem;}
     flex-direction: column;
     justify-content: center;
     align-items: center; 
+
 }
 
 .home {height: 100vh;}
 
+
+
 .about > .intro1 {
+
     display: flex;
     justify-content: space-around;
     color: rgb(26, 126, 92);
     height: auto;
     width: auto;
     padding: 2rem;
+
 }
 
 .comments {
+
     padding: 2rem;
     width: 100%;
     text-align: justify;
     height: auto;
     font-size: 1.7rem;
+
 }
 
-.comments > h2 {  color: rgb(22, 207, 121);}
+.comments > h2 {  color: rgb(24, 202, 172);}
 
 .intro1 > .image {
+
     height: 20rem;
     width: 30rem;
     background-image: url("aniket_balcony.jpg");
     background-size: cover;
     margin: 2rem;
-    box-shadow: 20px 20px 0px  rgb(23, 24, 23);
-    border: 11px solid rgb(3, 155, 84);
+    box-shadow: 10px 10px 8px gray;
+    border: 11px solid rgb(24, 202, 172);
+
 }
 
 
 .home > p {
+
     font-size: 2.5rem;
     padding: 1rem;
     text-align: center;
     animation-name: aniket;
     animation-duration: 2s;
+
 }
 
 /* animation */
@@ -158,91 +180,106 @@ a {text-decoration: none;color: #00fc70;padding: 0.3rem 1.5rem;}
 @keyframes aniket {from {font-size: 1rem;}to {font-size: 2.5rem;}}
 
 .home > img {
+
     height: 15rem;
     width: 15rem;
     border: 2px solid rgb(149, 178, 192);
     border-radius: 50%;
+
 }
 
 #skill_set {
 
     font-weight: bold;
-    color: rgb(54, 212, 107);
+    color: rgb(24, 202, 172);
     font-size: 2rem;
     text-shadow: 5px 5px 5px rgb(3, 10, 10);
     padding: 1rem;
 
 }
 
-.edu {
+.education > .box {
+
     display: flex;
     align-items: center;
     justify-content: center;
     padding: 2rem;
+
 }
 
-.edu > #content {
+.box > #content {
 
     margin: auto;
-    color:rgb(4, 245, 97);
+    color:rgb(24, 202, 172);
     font-size: 2.5rem;
     display: none;
     align-items: center;
+
 }
 
 
-.skill {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
 
 .box {
-    height: 25rem;
-    text-align: center;
-    border: 2px solid gray;
-    width: 40rem;
-    color: green;
+
     display: flex;
-    justify-content: space-between;
-    align-items:center;
+    flex-direction: column;
+    border: 2px solid gray;
+    color: green;
+    align-items:center; 
     box-shadow: 10px 10px 8px gray;
     animation-name: box_ani;
     animation-duration: 3s;
+
+}
+
+.box > .field > p {
+    
+    font-size: 1.5rem;
+    color: blanchedalmond;
+}
+
+.education > .box {
+
+    width: 50rem;
+    height: 20rem;
+    justify-content: center;
+
+}
+
+.field {
+    text-align: center; 
 }
 
 @keyframes ani {
+
     from {opacity: 0.3;}
     to {opacity: 1;}
+
 }
 
-.box > .laptop1,
-.box > .laptop2
- {
-    height: 100%;
-    width: 70%;
-    background-position: center;
-    background-size: cover;
-}
-.box > .laptop1 {background-image: url("laptop1.jpg");}
-.box > .laptop2 {background-image: url("laptop2.jpg");}
+.ttl {
 
-.skill > .ttl {
-    font-size: 2.5rem;
+    font-size: 2rem;
     color: rgb(24, 202, 172);
-    font-weight: 800;
+    font-weight: 500;
+    padding: 1.5rem;
+
+}
+
+.code_sites > .ttl {
+
+    font-size: 2.5rem;
     text-align: center;
-    padding: 2rem;
+    color: white;
+    margin-top: 5rem;
+
 }
 
 
-.box > .lan > p{font-size: 1.7rem; color: rgb(31, 192, 111);font-weight: 700;padding: 1rem;}
-.code_sites > p{text-align: justify;padding: 2rem;font-size: 1.7rem;}
-.code_sites > p > b {color: greenyellow;}
+
 .coding_profiles {display: flex;justify-content: center;align-items: center;}
-.coding_profiles > a{padding: 50px;border: 2px solid gray;margin: 1rem;font-size: 2rem;}
-.coding_profiles > a:hover {background-color: rgb(58, 108, 202);}
+.coding_profiles > a{margin: 1rem;font-size: 2rem;}
+.coding_profiles > a:hover {background-color: rgb(24, 202, 172);border-radius: 20px;}
 .contact__ > a > i {padding: 2rem;}
 
 .footer,
@@ -258,6 +295,7 @@ a {text-decoration: none;color: #00fc70;padding: 0.3rem 1.5rem;}
     color: rgb(16, 46, 148);
     font-weight: 700;
     text-shadow: 0px 0px 0px;
+
 }
 
 
@@ -269,69 +307,80 @@ a {text-decoration: none;color: #00fc70;padding: 0.3rem 1.5rem;}
  @media only screen and (max-width : 1242px) {
 
     .intro1 {
+
         flex-direction: column;
         justify-content: center;
         align-items: center;
+
     }
     #side_icon {
+
         display: flex;
         padding: 2px;
         margin-bottom: 1px solid black;
         cursor: pointer;
+
     }
     .options {
+
         display: none;
+
     }
     .home > p {
+
         font-size: 2rem;
+
     }
 
     @keyframes aniket {
+
         from {font-size: 1rem;}
         to {font-size: 2rem;}
+
     }
     .skills > .skill > box {
+
         height: 70%;
         width: 70%;
+
     }
 
     .coding_profiles > a {
+
         padding: 20px;
+
     }
     .contact__ > a > i {
+
         padding: 1rem;
+
+    }
+
+}
+@media only screen and (max-width : 880px) {
+
+    .education > .box {
+        width: 33rem;
+    }
+    .education > .box >  #content {
+        font-size: 1.5rem;
+    }
+
+    .comments {
+        font-size: 1.5rem;
     }
 
 }
 
 
-@media only screen and (max-width :700px) {
-    html {
-        font-size: 60%;
-    }
-} 
+ @media only screen and (max-width :680px) {
 
- @media only screen and (max-width :535px) {
-     
-    .coding_profiles > a {
-        padding: 10px;
-        font-size: 1.7rem;
-    }
-    .edu >#content {
-        font-size: 2rem;
+    html{
+        font-size: 70%;
     }
 }
 
-@media only screen and (max-width: 425px) {
-    .coding_profiles {
-        flex-direction: column;
-    }
-    .coding_profiles > a{
-        padding: 2rem;
-    }
-    .box {
-        width: 30rem;
-    }
+@media only screen and (max-width: 510px) {
 
     html {
         font-size: 55%;
@@ -339,15 +388,73 @@ a {text-decoration: none;color: #00fc70;padding: 0.3rem 1.5rem;}
 
 }
 
-@media only screen and (max-width: 830px) { .coding_profiles > a {font-size: 1.5rem;}}
+@media only screen and (max-width: 416px) {
 
-@media only screen and (max-width:335px) {
-    .edu >#content {
-        font-size: 1.5rem;
-    }
-    .contact__ > a > i {
-       padding: 0.6rem;
+    .coding_profiles > a{
+        padding: 1.5rem;
     }
 }
+
+@media only screen and (max-width: 380px) {
+
+  .navbar {
+      height: 5rem;
+  }
+  .navbar > .name,.sidebar > a  {
+      font-size: 1.5rem;
+  }
+  .sidebar >.cross {
+      font-size: 5rem;
+  }
+
+.contacts > .contact__ > a  {
+    padding: 0.3rem;
+}
+
+.box {
+    width: 80%;
+}
+
+.ttl {
+     font-size: 1.6rem;
+}
+.coding_profiles > a{
+    padding: 0.5rem;
+}
+
+
+.education > .box {
+    width: 30rem;
+}
+.education > .box > #content {
+    font-size: 1.2rem;
+}
+
+.intro1 > .image  {
+
+    width: 25rem;
+}
+
+}
+
+@media only screen and (max-width: 325px) {
+
+    .coding_profiles > a{
+        padding: 0.2rem;
+        font-size: 1.5rem;
+    }
+    .comments {
+        padding: 1rem;
+        font-size: 1.2rem;
+    }
+    
+    .home > p {
+        font-size: 2rem;
+        padding: 0.7rem;
+    }
+
+}
+
+
 
 
