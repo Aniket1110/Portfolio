@@ -20,7 +20,7 @@ $(document).ready(function () {
   //skill sets
 
     let __count = 0;
-    arr1 = ["Competitive Programmer", "Web Developer","Flutter Developer","IIESTIAN"];
+    arr1 = ["Programmer", "Developer","IIESTIAN"];
     setInterval(function () {
       $("#skill_set").fadeOut(1000, function () {
         $(this).text(arr1[__count %  arr1.length]).fadeIn(1000);
