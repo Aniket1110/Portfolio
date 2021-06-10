@@ -5,12 +5,17 @@
     margin:0px;
     padding:0px;
     box-sizing: border-box;
-    font-family: system-ui;
+    font-family:  monospace;
     color: white;
     vertical-align: middle;
-    text-shadow: 5px 5px 5px rgb(3, 10, 10);    
 }
 
+ul,li {
+
+    list-style-type: none;
+    font-size: 1.5rem;
+    padding: 0.3rem;
+}
 
 .navbar {
 
@@ -73,15 +78,13 @@ font-size: 2.5rem;
 
 }
 
-.name {margin-right: 3rem;font-size: 1.5rem;}
-.options > span >a{ cursor:pointer;font-size: 1.4rem;}
+.name {margin-right: 3rem;font-size: 1.8rem;}
+.options > span >a{ cursor:pointer;font-size: 1.5rem;}
 a {text-decoration: none;color:white;padding: 0.3rem 1.5rem;}
 
 
 .background {
- 
-    animation-name: background_animation;
-    animation-duration: 4s;
+
     background-position: center;
     background-size: cover;
     height:auto;
@@ -97,15 +100,17 @@ a {text-decoration: none;color:white;padding: 0.3rem 1.5rem;}
     justify-content: center;
     align-items: center;
     background-color: black;
+    padding: 3rem;
 
 }
 
  .heading {
 
     text-align: center;
-    font-size: 3rem;
-    margin-top: 8rem;
+    font-size: 2.5rem;
     padding: 1rem 0px ;
+    color: rgb(189, 27, 94);
+    font-weight: 800;
 
 }
 
@@ -113,78 +118,59 @@ a {text-decoration: none;color:white;padding: 0.3rem 1.5rem;}
 .home,
 .about,
 .education,
-.skills,
-.contacts,
-.footer
+.skills
 {
-    height: auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center; 
+    margin: 7rem 0rem 3rem 0rem;
+    padding : 7rem 0rem 7rem 0rem;
 
 }
 
-.home {height: 100vh;}
+.home {height: 100vh;margin: 0rem;padding: 0rem;}
 
+.greet { width: auto;padding: 1rem;}
 
+.typewriter  {
+    
+    color: #fff;
+    font-size: 4rem;
+    overflow: hidden; 
+    border-right: .15em solid rgb(189, 27, 94); 
+    white-space:nowrap;
+    margin: 0 auto;
+    animation: 
+      typing 3s steps(30, end),
+      blink-caret 0.5s step-end infinite;
 
-.about > .intro1 {
+  }
+  
+  @keyframes typing {
 
-    display: flex;
-    justify-content: space-around;
-    color: rgb(26, 126, 92);
-    height: auto;
-    width: auto;
-    padding: 2rem;
+    from { width: 0 }
+    to { width: 100% }
 
-}
+  }
 
-.comments {
+  @keyframes blink-caret {
 
-    padding: 2rem;
-    width: 100%;
-    text-align: justify;
-    height: auto;
-    font-size: 1.7rem;
+    from, to { border-color: transparent }
+    50% { border-color: rgb(189, 27, 94)}
 
-}
+  }
+  
+  
+.image {
 
-.comments > h2 {  color: rgb(24, 202, 172);}
-
-.intro1 > .image {
-
-    height: 20rem;
-    width: 30rem;
+    height: 18rem;
+    width: 25rem;
     background-image: url("aniket_balcony.jpg");
     background-size: cover;
-    margin: 2rem;
+    margin: 4rem;
     box-shadow: 10px 10px 8px gray;
     border: 11px solid rgb(24, 202, 172);
-
-}
-
-
-.home > p {
-
-    font-size: 2.5rem;
-    padding: 1rem;
-    text-align: center;
-    animation-name: aniket;
-    animation-duration: 2s;
-
-}
-
-/* animation */
-
-@keyframes aniket {from {font-size: 1rem;}to {font-size: 2.5rem;}}
-
-.home > img {
-
-    height: 15rem;
-    width: 15rem;
-    border: 2px solid rgb(149, 178, 192);
-    border-radius: 50%;
 
 }
 
@@ -192,30 +178,30 @@ a {text-decoration: none;color:white;padding: 0.3rem 1.5rem;}
 
     font-weight: bold;
     color: rgb(24, 202, 172);
-    font-size: 2rem;
+    font-size: 3rem;
     text-shadow: 5px 5px 5px rgb(3, 10, 10);
     padding: 1rem;
 
 }
 
-.education > .box {
 
-    display: flex;
-    align-items: center;
+.comments {
+
+    display: inline-block;
+    margin: 0px;
     justify-content: center;
-    padding: 2rem;
-
-}
-
-.box > #content {
-
-    margin: auto;
-    color:rgb(24, 202, 172);
-    font-size: 2.5rem;
-    display: none;
     align-items: center;
+    text-align: center;
+    padding: 5rem;
+    text-align: justify;
+    font-size: 1.7rem;
+    line-height: 2.5rem;
 
 }
+
+
+
+.comments > h2 {  color: rgb(24, 202, 172);}
 
 
 
@@ -223,96 +209,88 @@ a {text-decoration: none;color:white;padding: 0.3rem 1.5rem;}
 
     display: flex;
     flex-direction: column;
-    border: 2px solid gray;
-    color: green;
     align-items:center; 
-    box-shadow: 10px 10px 8px gray;
-    animation-name: box_ani;
-    animation-duration: 3s;
-
-}
-
-.box > .field > p {
-    
-    font-size: 1.5rem;
-    color: blanchedalmond;
-}
-
-.education > .box {
-
-    width: 50rem;
-    height: 20rem;
     justify-content: center;
+    padding: 2rem;
+}
+
+.education > .box > p {
+
+    font-size: 1.7rem;
+    margin: 1rem;
+    display: flex;
+    flex-direction:column ;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
 
 }
 
-.field {
-    text-align: center; 
+.education > .box > img {
+
+    height: 20rem;
+    width: 20rem;
+    margin-top: 1rem;
+    background-color: white;
 }
 
-@keyframes ani {
+.boxes {
 
-    from {opacity: 0.3;}
-    to {opacity: 1;}
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
 
 }
+
 
 .ttl {
 
-    font-size: 2rem;
+    font-size: 1.7rem;
     color: rgb(24, 202, 172);
     font-weight: 500;
     padding: 1.5rem;
 
 }
 
-.code_sites > .ttl {
-
-    font-size: 2.5rem;
-    text-align: center;
-    color: white;
-    margin-top: 5rem;
-
-}
-
-
 
 .coding_profiles {display: flex;justify-content: center;align-items: center;}
-.coding_profiles > a{margin: 1rem;font-size: 2rem;}
-.coding_profiles > a:hover {background-color: rgb(24, 202, 172);border-radius: 20px;}
-.contact__ > a > i {padding: 2rem;}
+.coding_profiles >li > a:hover {background-color: rgb(138, 224, 210);border-radius: 20px;color: black;}
 
-.footer,
-.footer > p
- {
+
+.contacts {
+
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    justify-content: space-evenly;
     align-items: center;
-    height: 10vh;
-    width: 100%;
-    margin-top: 1rem;
-    background-color: white;
-    color: rgb(16, 46, 148);
-    font-weight: 700;
-    text-shadow: 0px 0px 0px;
+    padding: 5rem;
 
 }
 
+.contacts > .heading { margin: 1rem 0rem;}
+.contacts > ul { display: flex;}
+.contacts > ul > li { font-size: 2rem;}
 
-@keyframes  background_animation {  from {opacity: 0.8;}  to{opacity: 1;}}
+
+.footer {
+
+    text-align: center;
+    color: rgb(24, 202, 172);
+    padding: 1rem;
+    font-weight: bold;
+    font-size: 1.2rem;
+    
+}
+
 
 
 /* Responsive web design using media queries */
 
  @media only screen and (max-width : 1242px) {
 
-    .intro1 {
-
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-
-    }
     #side_icon {
 
         display: flex;
@@ -326,134 +304,208 @@ a {text-decoration: none;color:white;padding: 0.3rem 1.5rem;}
         display: none;
 
     }
-    .home > p {
+
+    .home > .greet > p {
+
+        font-size: 2.5rem;
+
+    }
+
+}
+
+ @media only screen and (max-width : 810px) {
+
+    .home > .greet > p {
 
         font-size: 2rem;
 
     }
 
-    @keyframes aniket {
-
-        from {font-size: 1rem;}
-        to {font-size: 2rem;}
-
-    }
-    .skills > .skill > box {
-
-        height: 70%;
-        width: 70%;
-
-    }
-
-    .coding_profiles > a {
-
-        padding: 20px;
-
-    }
-    .contact__ > a > i {
-
-        padding: 1rem;
-
-    }
-
-}
-@media only screen and (max-width : 880px) {
-
-    .education > .box {
-        width: 33rem;
-    }
-    .education > .box >  #content {
-        font-size: 1.5rem;
+    .skills > .boxes {
+        flex-direction: column;
+        justify-content: flex-start;
     }
 
     .comments {
-        font-size: 1.5rem;
+        font-size: 1.4rem;
+        line-height: 2rem;
     }
 
-}
-
-
- @media only screen and (max-width :680px) {
-
-    html{
-        font-size: 70%;
-    }
-}
-
-@media only screen and (max-width: 510px) {
-
-    html {
-        font-size: 55%;
+    #skill_set {
+        font-size: 2.5rem;
     }
 
-}
-
-@media only screen and (max-width: 416px) {
-
-    .coding_profiles > a{
-        padding: 1.5rem;
+    .heading {
+        font-size: 2rem;
     }
-}
-
-@media only screen and (max-width: 380px) {
-
-  .navbar {
-      height: 5rem;
-  }
-  .navbar > .name,.sidebar > a  {
-      font-size: 1.5rem;
-  }
-  .sidebar >.cross {
-      font-size: 5rem;
-  }
-
-.contacts > .contact__ > a  {
-    padding: 0.3rem;
-}
-
-.box {
-    width: 80%;
-}
-
-.ttl {
-     font-size: 1.6rem;
-}
-.coding_profiles > a{
-    padding: 0.5rem;
-}
-
-
-.education > .box {
-    width: 30rem;
-}
-.education > .box > #content {
-    font-size: 1.2rem;
-}
-
-.intro1 > .image  {
-
-    width: 25rem;
-}
-
-}
-
-@media only screen and (max-width: 325px) {
-
-    .coding_profiles > a{
-        padding: 0.2rem;
-        font-size: 1.5rem;
-    }
-    .comments {
+    .ttl {
+        font-size: 1.3rem;
         padding: 1rem;
-        font-size: 1.2rem;
+    }
+
+    .contacts > ul > li {
+        font-size: 1.8rem;
+    }
+}
+
+
+ @media only screen and (max-width :580px) {
+
+    .home > .greet > p {
+
+        font-size: 1.6rem;
+
+    }
+    .coding_profiles {
+        flex-direction: column;
     }
     
-    .home > p {
-        font-size: 2rem;
-        padding: 0.7rem;
+    #skill_set {
+        font-size: 2.1rem;
+    }
+
+    li,.education > .box > p , .comments {
+        font-size: 1.2rem;
+    }
+
+    .contacts > ul > li {
+        font-size: 1.6rem;
     }
 
 }
+
+
+@media only screen and (max-width: 420px) {
+
+    .navbar {
+        height: 3.5rem;
+    }
+    .sidebar {
+        width: 10rem;
+    }
+    .sidebar > div > a {
+        font-size: 1.1rem;
+    }
+    .name {
+        font-size: 1.4rem;
+    }
+    #side_icon {
+        font-size: 1.5rem;
+    }
+    .cross {
+        font-size: 3.5rem;
+    }
+    .home > .greet > p {
+
+        font-size: 1.3rem;
+    }
+    #skill_set {
+        font-size: 1.5rem;
+   }
+   .comments > h2 {
+       font-size: 1.5rem;
+   }
+   .education > .box > p {
+       font-size: 1.1rem;
+   }
+
+    .home > .image {
+        height: 15rem;
+        width: 20rem;
+    }
+
+    .comments {
+        font-size: 1.1rem;
+        line-height: 1.6rem;
+    }
+
+   
+    .ttl {
+        font-size: 1.2rem;
+        padding: 0.7rem;
+    }
+    .education > .box > img {
+        width: 17rem;
+        height: 17rem;
+    }
+    
+    .about , .education , .skills , .contacts {
+        padding: 5rem 0rem 1rem 0rem;
+        margin: 4rem 0rem 3rem 0rem;
+    }
+    
+
+}
+
+@media only screen and (max-width: 350px) {
+
+    .heading {
+        font-size: 1.6rem;
+    }
+
+    .home > .greet > p {
+
+        font-size: 1.2rem;
+    }
+
+    .comments {
+        font-size: 1.05rem;
+        line-height: 1.4rem;
+        word-wrap: none;
+    }
+    .comments > h2 {
+        font-size: 1.3rem;
+    }
+    .home > .image {
+
+        height: 13rem;
+        width: 18rem;
+    }
+    .about , .education , .skills , .contacts {
+        padding: 3rem 0rem 1rem 0rem;
+        margin: 2rem 0rem 2rem 0rem;
+    }
+
+    .education >.box > img {
+        width: 15rem;
+        height: 15rem;
+    }
+    .education > .box > p {
+        font-size: 1.05rem;
+    }
+    .ttl {
+        font-size: 1.05rem;
+        padding: 0.5rem;
+    }
+    ul {
+        font-size: 1.05rem;
+    }
+
+    .footer{
+        font-size: 0.7rem;
+    }
+    
+    #side_icon {
+        font-size: 1.2rem;
+    }
+    .name {
+        font-size: 1.2rem;
+    }
+
+    .cross {
+        font-size: 2.5rem;
+    }
+    .sidebar{
+        width: 8rem;
+    }
+    .sidebar > div > a {
+        font-size: 1rem;
+    }
+
+    .contacts > ul > li {
+        font-size: 1.3rem;
+    }
+}  
 
 
 
