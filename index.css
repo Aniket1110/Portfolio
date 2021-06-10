@@ -166,7 +166,7 @@ a {text-decoration: none;color:white;padding: 0.3rem 1.5rem;}
 
     height: 18rem;
     width: 25rem;
-    background-image: url("aniket_balcony.jpg");
+    background-image: url("aniket.jpg");
     background-size: cover;
     margin: 4rem;
     box-shadow: 10px 10px 8px gray;
@@ -351,6 +351,19 @@ a {text-decoration: none;color:white;padding: 0.3rem 1.5rem;}
 
  @media only screen and (max-width :580px) {
 
+    .navbar {
+        height: 4rem;
+    }
+    .name {
+        font-size: 1.5rem;
+    }
+    #side_icon {
+        font-size: 1.6rem;
+    }
+    .cross {
+        font-size: 4rem;
+    }
+
     .home > .greet > p {
 
         font-size: 1.6rem;
@@ -370,6 +383,10 @@ a {text-decoration: none;color:white;padding: 0.3rem 1.5rem;}
 
     .contacts > ul > li {
         font-size: 1.6rem;
+    }
+    
+    .footer {
+        font-size: 1rem;
     }
 
 }
