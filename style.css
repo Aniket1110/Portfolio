@@ -10,12 +10,22 @@
     vertical-align: middle;
 }
 
-ul,li {
+ /* global styles  */
+
+ul {
 
     list-style-type: none;
     font-size: 1.5rem;
     padding: 0.3rem;
 }
+
+a {
+    text-decoration: none;
+    color:white;
+    padding: 0.3rem 1.5rem;
+}
+
+/* navbar style  */
 
 .navbar {
 
@@ -24,15 +34,15 @@ ul,li {
     justify-content: space-between;
     height: 5rem;
     background-color: grey;
-    transition: background-color 2s;
     align-items: center;
     position:fixed;
     left: 0px;
-    top:0px;
+    top: 0px;
     z-index: 1000;
     right: 0px;     
 }
 
+ /* sidebar style  */
 
 .sidebar {
 
@@ -40,7 +50,6 @@ ul,li {
     height: 100%;
     width: 15rem;
     text-align: center;
-    flex-direction: column;
     justify-content: space-around;
     line-height: 15vh;
     z-index: 1000;
@@ -49,17 +58,20 @@ ul,li {
 
 }
 
+ /* side icon style  */
+
 #side_icon {
 
-margin-left: 3rem;
+margin-left: 1.5rem;
 cursor: pointer;
 display: none;
 font-size: 2.5rem;
 
 }
 
+ /* sidebar close icon style  */
 
-.sidebar > .cross {
+.sidebar > .close-icon {
 
     font-size: 5rem;
     cursor: pointer;
@@ -69,24 +81,27 @@ font-size: 2.5rem;
 
 }
 
-.sidebar > div > a {font-size: 1.5rem;}
-.sidebar > div > a:hover,
-.options > span >a:hover { 
+.sidebar  div  a {font-size: 1.5rem;}
+
+.sidebar  div  a:hover,
+.options  span a:hover { 
 
     background-color: rgb(24, 202, 172);
     border-radius: 20px;
 
 }
 
+.options  span  a{ cursor:pointer;font-size: 1.5rem;}
+
+ /*  name style */
+
 .name {margin-right: 3rem;font-size: 1.8rem;}
-.options > span >a{ cursor:pointer;font-size: 1.5rem;}
-a {text-decoration: none;color:white;padding: 0.3rem 1.5rem;}
 
 
-.background {
+/* fixed background style  */
 
-    background-position: center;
-    background-size: cover;
+.fixed-background {
+
     height:auto;
     position: fixed;
     left: 0px;
@@ -94,26 +109,12 @@ a {text-decoration: none;color:white;padding: 0.3rem 1.5rem;}
     top:0px;
     bottom: 0px;
     z-index: -1;
-    display: flex;
-    flex-direction: column;
-    color: white;
-    justify-content: center;
-    align-items: center;
     background-color: black;
-    padding: 3rem;
 
 }
 
- .heading {
 
-    text-align: center;
-    font-size: 2.5rem;
-    padding: 1rem 0px ;
-    color: rgb(189, 27, 94);
-    font-weight: 800;
-
-}
-
+/* common section's styles*/
 
 .home,
 .about,
@@ -125,13 +126,18 @@ a {text-decoration: none;color:white;padding: 0.3rem 1.5rem;}
     justify-content: center;
     align-items: center; 
     margin: 7rem 0rem 3rem 0rem;
-    padding : 7rem 0rem 7rem 0rem;
+    padding : 7rem 0rem;
 
 }
 
-.home {height: 100vh;margin: 0rem;padding: 0rem;}
+.home {height: 100vh;padding: 0rem;margin-top: 1rem;}
+
+ /* greet style  */
 
 .greet { width: auto;padding: 1rem;}
+
+
+ /* animation on greet  */
 
 .typewriter  {
     
@@ -160,13 +166,26 @@ a {text-decoration: none;color:white;padding: 0.3rem 1.5rem;}
     50% { border-color: rgb(189, 27, 94)}
 
   }
-  
-  
+
+  /*  heading style for each sections  */
+
+  .heading {
+    margin: 0rem auto;
+    text-align: center;
+    font-size: 2.5rem;
+    padding: 1rem 0px ;
+    color: rgb(189, 27, 94);
+    font-weight: 800;
+
+}
+
+/* profile images */
+
 .image {
 
     height: 18rem;
     width: 25rem;
-    background-image: url("aniket.jpg");
+    background-image: url("./assets/aniket.jpg");
     background-size: cover;
     margin: 4rem;
     box-shadow: 10px 10px 8px gray;
@@ -184,28 +203,28 @@ a {text-decoration: none;color:white;padding: 0.3rem 1.5rem;}
 
 }
 
+ /* about section styles  */
 
-.comments {
+.intro {
 
     display: inline-block;
     margin: 0px;
     justify-content: center;
     align-items: center;
     text-align: center;
-    padding: 5rem;
+    padding: 8rem;
     text-align: justify;
     font-size: 1.7rem;
     line-height: 2.5rem;
 
 }
 
+.intro  h2 {  color: rgb(24, 202, 172);}
 
 
-.comments > h2 {  color: rgb(24, 202, 172);}
+/* education section styles  */
 
-
-
-.box {
+.institute-details {
 
     display: flex;
     flex-direction: column;
@@ -214,10 +233,10 @@ a {text-decoration: none;color:white;padding: 0.3rem 1.5rem;}
     padding: 2rem;
 }
 
-.education > .box > p {
+.education > .institute-details  p {
 
     font-size: 1.7rem;
-    margin: 1rem;
+    margin: 1rem 0rem;
     display: flex;
     flex-direction:column ;
     align-items: center;
@@ -226,13 +245,16 @@ a {text-decoration: none;color:white;padding: 0.3rem 1.5rem;}
 
 }
 
-.education > .box > img {
+.education > .institute-details  img {
 
     height: 20rem;
     width: 20rem;
     margin-top: 1rem;
     background-color: white;
+
 }
+
+/* skill section styles  */
 
 .boxes {
 
@@ -242,11 +264,11 @@ a {text-decoration: none;color:white;padding: 0.3rem 1.5rem;}
     align-items: center;
     margin-top: 2rem;
     margin-bottom: 2rem;
-
 }
 
+/* style for each icons in skill section */
 
-.ttl {
+.icon-style {
 
     font-size: 1.7rem;
     color: rgb(24, 202, 172);
@@ -255,10 +277,12 @@ a {text-decoration: none;color:white;padding: 0.3rem 1.5rem;}
 
 }
 
+/* coding profiles style  */
 
-.coding_profiles {display: flex;justify-content: center;align-items: center;}
-.coding_profiles >li > a:hover {background-color: rgb(138, 224, 210);border-radius: 20px;color: black;}
+.coding_profiles {display: flex;align-items: center;justify-content: center;}
+.coding_profiles  li a:hover {background-color: rgb(138, 224, 210);border-radius: 20px;color: black;}
 
+/* contacts style  */
 
 .contacts {
 
@@ -271,23 +295,27 @@ a {text-decoration: none;color:white;padding: 0.3rem 1.5rem;}
 }
 
 .contacts > .heading { margin: 1rem 0rem;}
-.contacts > ul { display: flex;}
-.contacts > ul > li { font-size: 2rem;}
+.contacts  ul { display: flex;}
+.contacts  ul  li { font-size: 2rem;}
+.contacts  ul li a i:hover {
+    color: rgb(24, 202, 172);
+}
 
+ /* footer style  */
 
 .footer {
 
     text-align: center;
     color: rgb(24, 202, 172);
-    padding: 1rem;
+    padding: 1.5rem;
     font-weight: bold;
     font-size: 1.2rem;
-    
 }
 
 
 
 /* Responsive web design using media queries */
+
 
  @media only screen and (max-width : 1242px) {
 
@@ -304,8 +332,14 @@ a {text-decoration: none;color:white;padding: 0.3rem 1.5rem;}
         display: none;
 
     }
-
-    .home > .greet > p {
+    .intro {
+        padding: 2rem;
+    }
+    .institute-details {
+        padding: 1rem;
+        font-size: 1.5rem;
+    }
+    .home > .greet  p {
 
         font-size: 2.5rem;
 
@@ -315,7 +349,7 @@ a {text-decoration: none;color:white;padding: 0.3rem 1.5rem;}
 
  @media only screen and (max-width : 810px) {
 
-    .home > .greet > p {
+    .home > .greet  p {
 
         font-size: 2rem;
 
@@ -326,9 +360,12 @@ a {text-decoration: none;color:white;padding: 0.3rem 1.5rem;}
         justify-content: flex-start;
     }
 
-    .comments {
+    .intro {
         font-size: 1.4rem;
         line-height: 2rem;
+    }
+    .education > .institute-details  p {
+        font-size: 1.4rem;
     }
 
     #skill_set {
@@ -338,18 +375,18 @@ a {text-decoration: none;color:white;padding: 0.3rem 1.5rem;}
     .heading {
         font-size: 2rem;
     }
-    .ttl {
+    .icon-style {
         font-size: 1.3rem;
         padding: 1rem;
     }
 
-    .contacts > ul > li {
+    .contacts  ul  li {
         font-size: 1.8rem;
     }
 }
 
 
- @media only screen and (max-width :580px) {
+ @media only screen and (max-width :600px) {
 
     .navbar {
         height: 4rem;
@@ -360,28 +397,31 @@ a {text-decoration: none;color:white;padding: 0.3rem 1.5rem;}
     #side_icon {
         font-size: 1.6rem;
     }
-    .cross {
+   .sidebar > .close-icon {
         font-size: 4rem;
     }
 
-    .home > .greet > p {
+    .home > .greet  p {
 
         font-size: 1.6rem;
 
     }
+
     .coding_profiles {
         flex-direction: column;
+        align-items: flex-start;
     }
+
     
     #skill_set {
         font-size: 2.1rem;
     }
 
-    li,.education > .box > p , .comments {
+    li,.education > .institute-details  p , .intro {
         font-size: 1.2rem;
     }
 
-    .contacts > ul > li {
+    .contacts  ul  li {
         font-size: 1.6rem;
     }
     
@@ -400,7 +440,7 @@ a {text-decoration: none;color:white;padding: 0.3rem 1.5rem;}
     .sidebar {
         width: 10rem;
     }
-    .sidebar > div > a {
+    .sidebar  div a {
         font-size: 1.1rem;
     }
     .name {
@@ -409,21 +449,21 @@ a {text-decoration: none;color:white;padding: 0.3rem 1.5rem;}
     #side_icon {
         font-size: 1.5rem;
     }
-    .cross {
+    .sidebar > .close-icon {
         font-size: 3.5rem;
     }
-    .home > .greet > p {
+    .home > .greet  p {
 
         font-size: 1.3rem;
     }
     #skill_set {
         font-size: 1.5rem;
    }
-   .comments > h2 {
+   .intro  h2 {
        font-size: 1.5rem;
    }
-   .education > .box > p {
-       font-size: 1.1rem;
+   .education > .institute-details   {  
+       padding: 0.7rem;
    }
 
     .home > .image {
@@ -431,17 +471,16 @@ a {text-decoration: none;color:white;padding: 0.3rem 1.5rem;}
         width: 20rem;
     }
 
-    .comments {
+    .intro {
         font-size: 1.1rem;
         line-height: 1.6rem;
     }
-
    
-    .ttl {
+    .icon-style {
         font-size: 1.2rem;
         padding: 0.7rem;
     }
-    .education > .box > img {
+    .education > .institute-details  img {
         width: 17rem;
         height: 17rem;
     }
@@ -460,17 +499,17 @@ a {text-decoration: none;color:white;padding: 0.3rem 1.5rem;}
         font-size: 1.6rem;
     }
 
-    .home > .greet > p {
+    .home > .greet  p {
 
         font-size: 1.2rem;
     }
 
-    .comments {
-        font-size: 1.05rem;
-        line-height: 1.4rem;
+    .intro {
+        font-size: 1.1rem;
+        line-height: 1.8rem;
         word-wrap: none;
     }
-    .comments > h2 {
+    .intro  h2 {
         font-size: 1.3rem;
     }
     .home > .image {
@@ -483,16 +522,16 @@ a {text-decoration: none;color:white;padding: 0.3rem 1.5rem;}
         margin: 2rem 0rem 2rem 0rem;
     }
 
-    .education >.box > img {
+    .education >.institute-details  img {
         width: 15rem;
         height: 15rem;
     }
-    .education > .box > p {
-        font-size: 1.05rem;
+    .education > .institute-details  p {
+        font-size: 1.1rem;
     }
-    .ttl {
-        font-size: 1.05rem;
-        padding: 0.5rem;
+    .icon-style {
+        font-size: 1rem;
+        padding: 1rem 1rem;
     }
     ul {
         font-size: 1.05rem;
@@ -509,17 +548,17 @@ a {text-decoration: none;color:white;padding: 0.3rem 1.5rem;}
         font-size: 1.2rem;
     }
 
-    .cross {
+    .sidebar > .close-icon {
         font-size: 2.5rem;
     }
     .sidebar{
-        width: 8rem;
+        width: 10rem;
     }
-    .sidebar > div > a {
-        font-size: 1rem;
+    .sidebar  div  a {
+        font-size: 1.1rem;
     }
 
-    .contacts > ul > li {
+    .contacts  ul  li {
         font-size: 1.3rem;
     }
 }  

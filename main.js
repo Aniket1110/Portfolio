@@ -12,7 +12,7 @@ $(document).ready(function () {
 
  //for closing sidebar
 
-  $(".cross").click(function () {
+  $(".close-icon").click(function () {
     $(".sidebar").hide(300);
   });
 

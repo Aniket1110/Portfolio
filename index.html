@@ -8,16 +8,16 @@
 
     <!--Page Description-->
     <meta name="description"
-        content="Aniket Majhi- Portfolio - Studying B.Tech in Information Technology(2019-2013) at IIEST, Shibpur">
+        content="Aniket Majhi- Portfolio - Studying B.Tech in Information Technology(2019-2023) at IIEST, Shibpur">
 
     <!--Page Icon-->
-    <link rel="icon" href="aniket.jpg" style="border: 1px solid black; size: 2rem;">
+    <link rel="icon" href="./assets/aniket.jpg" style="border: 1px solid black; size: 2rem;">
 
     <!--Title-->
-    <title>Portfolio | Aniket Majhi</title>
+    <title>Aniket Majhi</title>
 
     <!--All CSS-->
-    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="style.css">
 
     <!--fontawesom-->
     <script src="https://kit.fontawesome.com/1e2c9bf03f.js" crossorigin="anonymous"></script>
@@ -30,19 +30,19 @@
 <body>
 
     <!--fixed background-->
-    <div class="background"> </div>
+    <div class="fixed-background"> </div>
 
     <!--navbar-->
 
     <div class="navbar">
-        <div id="side_icon">☰</div>
-        <div class="options">
+        <div id="side_icon"><i class="fas fa-bars"></i></div>
+        <ul class="options">
             <span id="list1"><a href="#page1">Home</a></span>
             <span id="list2"><a href="#page2">About</a></span>
             <span id="list3"><a href="#page3">Education</a></span>
             <span id="list4"><a href="#page4">Skills</a></span>
             <span id="list5"><a href="#page5">Contact</a></span>
-        </div>
+        </ul>
         <div class="name" style="color: white;">ANIKET MAJHI</div>
     </div>
 
@@ -50,7 +50,7 @@
 
     <div class="sidebar">
 
-        <div class="cross"><div>x</div> </div>
+        <div class="close-icon"><div>x</div> </div>
 
         <div><a href="#page1">Home</a></div>
         <div><a href="#page2">About</a></div>
@@ -63,7 +63,8 @@
     <!--Home and profile -->
 
     <div class="home" id="page1">
-        <div class="greet"><p class="typewriter">Hello There 👋! I'm Aniket Majhi.</p></div>
+
+        <div class="greet"><p class="typewriter">Hello There &#128075;! I'm Aniket Majhi.</p></div>
         <div class="image"></div>
         <div id="skill_set"></div>
 
@@ -75,12 +76,12 @@
 
         <div class="heading">About Me</div>
 
-            <div class="comments">
+            <div class="intro">
 
-               <h2>Hi👋,I am Aniket,</h2><br>
+               <h2>Hi &#128075;,I am Aniket,</h2><br>
                <p style="display: inline-block;margin: 0px;">I am a 2nd year undergrad at IIEST,Shibpur,pursuing B.Tech in Information Technology.I am from Nadia,
                 West Bengal.I am a Competitive Programmer,Front End Developer and a Flutter Developer.I had started coding in my freshmen year by C Language.After that I learned C++, Java and Python.
-                Side by side I also learned Front End Developement.Currently I am exploring the backend part and Flutter App.I use C++ as my primary language for solving coding problems and competing in Competitive Programming challenges.
+                Side by side I also learned Front End Developement.Currently I am exploring the backend part and Flutter.I use C++ as my primary language for solving coding problems and competing in Competitive Programming challenges.
                 I love to explore and learn new techs and apply them.</p>
             </div>
 
@@ -92,13 +93,13 @@
 
         <div class="heading">Education </div>
 
-        <div class="box">
+        <div class="institute-details">
 
             <p>Indian Institute of Engineering Science and Technology, Shibpur</p>
             <p>Course - Bachelor of Technology</p>
             <p>Dept - Information Technology</p>
             <p>Duration - ( 2019 - 2023 )</p>
-            <img src="iiest_logo.png" alt="iiest_logo">
+            <img src="./assets/iiest_logo.png" alt="iiest_logo">
     
         </div>
         
@@ -114,18 +115,18 @@
         <div class="boxes">
 
             <ul>
-                <li ><i class="ttl fas fa-code"></i>C++/ C/ Java</li>
-                <li ><i class="ttl fab fa-python"></i>Python</li>
-                <li ><i class="ttl fas fa-bolt"></i>Competitive Programming</li>
-                <li ><i class="ttl fas fa-cubes"></i>Data Structures & Algoritms</li>
+                <li ><i class="icon-style fas fa-code"></i><span>C++/ C/ Java</span></li>
+                <li ><i class="icon-style fab fa-python"></i><span>Python</span></li>
+                <li ><i class="icon-style fas fa-bolt"></i><span>Competitive Programming</span></li>
+                <li ><i class="icon-style fas fa-cubes"></i><span>Data Structures & Algoritms</span></li>
     
             </ul>
     
             <ul>
-                <li ><i class="ttl fas fa-file-code"></i>Web Developement  </li>
-                <li ><i class="ttl fab fa-android"></i>Android  App  Developement <b style="visibility: hidden;"> .</b></li>
-                <li ><i class="ttl fas fa-code-branch"></i>Git  </li>
-                <li ><i class="ttl fas fa-database"></i>Firebase  </li>
+                <li ><i class="icon-style fas fa-file-code"></i><span>Web Developement</span></li>
+                <li ><i class="icon-style fab fa-android"></i><span>Android  App  Developement </span><b style="visibility: hidden;"> .</b></li>
+                <li ><i class="icon-style fas fa-code-branch"></i><span>Git</span></li>
+                <li ><i class="icon-style fas fa-database"></i><span>Firebase</span></li>
             </ul>
     
         </div>
@@ -133,19 +134,18 @@
        
          <!--Competitive Programming profiles-->
 
-        <div class="code_sites">
+        <div class="heading"> Coding Profiles</div>
 
-            <div class="heading"> Coding Profiles</div>
-    
+        <div class="coding-sites">
+
             <ul class="coding_profiles">
-                <li class="ttl"><a href="https://codeforces.com/profile/Aniket1110" target="blank"><i class="fas fa-code"
-                    style="color:rgb(24, 202, 172) ;"></i> Codeforces</a></li>
-                <li class="ttl"><a href="https://www.codechef.com/users/aniket1011" target="blank"><i class="fas fa-code"
-                        style="color:rgb(24, 202, 172) ;"></i> Codechef<b style="visibility: hidden;"> .</b></a></li>
-               <li class="ttl"><a href="https://www.hackerrank.com/aniket1011" target="blank"><i class="fas fa-code"
-                        style="color:rgb(24, 202, 172) ;"></i> Hackerrank</a></li>
-                </ul>
-    
+
+                <li ><a href="https://codeforces.com/profile/Aniket1110" target="blank"><i class="icon-style fas fa-code"></i>Codeforces</a></li>
+                <li ><a href="https://www.codechef.com/users/aniket1011" target="blank"><i class="icon-style fas fa-code"></i>Codechef<b style="visibility: hidden;"> .</b></a></li>
+                <li ><a href="https://www.hackerrank.com/aniket1011" target="blank"><i class="icon-style fas fa-code"></i>Hackerrank</a></li>
+                
+            </ul>
+
         </div>
     
 
@@ -171,10 +171,12 @@
       <!--Footer-->
 
     <div class="footer">
-         &#169; 2021- Aniket Majhi,  Made with ❤️
+         &copy; 2021- Aniket Majhi,  Made with <span style="color: red;">&#10084;</span>
     </div>
+    
+    <!-- main Js -->
 
-    <script src="portfolio.js"></script>
+    <script src="main.js"></script>
 
 </body>
 
